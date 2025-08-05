@@ -5,7 +5,10 @@ We making a proper portfolio with this one. And it will constantly be updated wi
 
 My personal developer portfolio showcasing projects, skills, and contact information.
 
-.
+## Live Demo
+
+The portfolio is deployed using GitHub Pages: 
+https://ahmad-cs-u.github.io/Portfolio_2.0/index.html
 
 ## Features
 
