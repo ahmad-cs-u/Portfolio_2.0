@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad - Projects</title>
+    <link rel="stylesheet" type="text/css" href="projects.css">
+</head>
+<body>
+<header>
+    <h1 id="main-heading">Projects</h1>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skillset.html">Skillset</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="projects-showcase">
+    <h2>My Projects</h2>
+    <div class="carousel-container">
+        <button class="carousel-btn left">&#10094;</button>
+        <div class="carousel-track">
+            <div class="project-card">
+                <img src="Hangman.png" alt="Project 1">
+                <h3>Hangman in python</h3>
+                <p>Command line based implementation of hangman. Proper implementation of lives, and a slightly visual representation of game status.</p>
+            </div>
+            <div class="project-card">
+                <img src="Database.png" alt="Project 2">
+                <h3>Database Manager in Java</h3>
+                <p>A command-line based database management application. Complete implementation of CRUD operations along with permanent storage in .txt files having TSV.</p>
+            </div>
+            <div class="project-card">
+                <img src="SmartCity.png" alt="Project 3">
+                <h3>Smart City management system</h3>
+                <p>A GUI based implementation of OOP concepts in Java by creating a Smart City Management System. CRUD operations along with permanent storage in .ser files.</p>
+            </div>
+            <div class="project-card">
+                <img src="Warehouse.png" alt="Project 4">
+                <h3>Warehouse management system in CPP</h3>
+                <p>A warehouse management system using various Data Structures and Algortihms to schedule deliveries based on different priorities. The manager loads data from a dataset and works on it instead of a user providing data</p>
+            </div>
+            <div class="project-card">
+                <img src="MockSpotify.png" alt="Project 5">
+                <h3>Mock Spotify back-end</h3>
+                <p>Mock back-end database of Spotify created using MongoDB, and Java for GUI. CRUD operations as well as proper query performance. Collaborative work with my <a href="http://github.com/khushnood956">friend</a></p>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        <button class="carousel-btn right">&#10095;</button>
+    </div>
+</section>
+<footer>
+    <p>Copyright &copy; 2025 Ghouri ka portfolio</p>
+</footer>
+</body>
+<script>
+    const track = document.querySelector('.carousel-track');
+    const leftBtn = document.querySelector('.carousel-btn.left');
+    const rightBtn = document.querySelector('.carousel-btn.right');
+
+    leftBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+
+    rightBtn.addEventListener('click', () => {
+        track.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+</script>
+</html>
